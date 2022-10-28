@@ -12,10 +12,10 @@ OAUTH_TOKEN=""
 OAUTH_TOKEN_SECRET=""
 
 list_ids=[]
-df_stu=pd.read_csv("dataset_2emotion.csv", delimiter=";") 
+df_stu=pd.read_csv("final_data_share.csv.csv", delimiter=";") 
 print("df_stu :: ",len(df_stu))
 
-list_ids=df_stu["tid"].tolist()
+list_ids=df_stu["tweetid"].tolist()
 
 print("len of tweets",len(list_ids),list_ids[:10])
 
